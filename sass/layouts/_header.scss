@@ -62,7 +62,7 @@
     
 }
 
-.current{
+.menu__link--current{
     color: var(--color-light-blue);
     &::after{
         content: '';
