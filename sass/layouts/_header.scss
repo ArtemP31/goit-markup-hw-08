@@ -4,6 +4,7 @@
 
 .header{
     border-bottom: 1px solid var(--border);
+    
 }
 
 
@@ -11,7 +12,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
+    padding-bottom: 16px;
+    padding-top: 16px;
 }
 
 .header__logo{
@@ -39,6 +41,7 @@
     display: flex;
     gap: 50px;
     margin-left: 93px;
+    display: none;
 
 }
 
@@ -83,6 +86,7 @@
     align-items: baseline;
     gap: 50px;
     margin-left: auto;
+    display: none;
 }
 
 
@@ -108,11 +112,25 @@
     line-height: 1.1428;
     letter-spacing: 0.02em;
     color: var(--color-gray);
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
+.menu-open{
+    width: 40px;
+    height: 40px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu__icon{
+    // width: 24px;
+    // height: 16px;
+}
 
