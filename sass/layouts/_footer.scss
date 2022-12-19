@@ -6,7 +6,7 @@
 
 .foot__container{
     display: block;
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         align-items: baseline;
         display: flex;
         justify-content: start;
@@ -25,7 +25,7 @@
 
 .container-tab-logo{
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-left: 50px;
+        margin-left: 70px;
     }
     
 }
@@ -53,7 +53,7 @@
 
     
     
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px)  {
         display: inline-block;
         font-weight: 700;
         font-size: 26px;
@@ -67,7 +67,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 60px;
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 0;
         display: inline-block;
     }
@@ -76,7 +76,7 @@
 
 .foot-list__child:not(:last-child){
     margin-bottom: 8px;
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 9px;
     }
 }
@@ -112,6 +112,12 @@
     
 }    
 
+// .container-block{
+//     @media screen and (min-width: 768px) and (max-width: 1199px) {
+//         margin-right: 152px;
+//         margin-left: 166px;
+//     }
+// }
 
 .container-block__titel{
     display: flex;
@@ -124,7 +130,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--color-white);
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: inline-block;
     }
     
@@ -137,7 +143,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         justify-content: flex-start;  
         margin-bottom: 0;  
     }
@@ -178,7 +184,7 @@
         width: 450px;
         margin-left: 166px;
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px){
+    @media screen and (min-width: 1200px) {
         display: flex;
         gap: 12px;
         margin-left: 0;
@@ -208,6 +214,7 @@
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 100%;
+        
     }
     @media screen and (min-width: 1200px) {
         width: 358px;
@@ -221,6 +228,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+        margin-left: 118px;
+    }
     @media screen and (min-width: 1200px) {
         display: block;
     }
@@ -250,6 +261,7 @@
     &:focus{
         background-color: var(--color-btn);
     }
+    
     @media screen and (min-width: 1200px) {
         padding: 10px 62px 10px 28px;
     }

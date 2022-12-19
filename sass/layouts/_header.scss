@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (min-width: 768px)  and (max-width: 1600px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         justify-content: start;
         align-items: center;
@@ -36,7 +36,7 @@
     line-height: 1.1666;
     letter-spacing: 0.03em;
     color: var(--color-black);
-    @media screen and (min-width: 1200px) and (max-width: 1600px){
+    @media screen and (min-width: 1200px) {
         font-size: 26px;
         line-height: 1.1923;
     }
@@ -51,7 +51,7 @@
 .menu__beg{
 
     display: none;
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         cursor: pointer;
         gap: 50px;
@@ -105,7 +105,7 @@
 .menu__adres{
     display: none;
     
-    @media screen and (min-width: 1200px) and (max-width: 1600px){
+    @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: end;
         align-items: baseline;
@@ -131,14 +131,18 @@
     }
 }
 
-
+.menu__iteam:not(:last-child){
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
+}
 
 .menu__icon{
     
     fill: currentColor;
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 8px;
-        margin-bottom: 10px;
+        
     }
 }
 
@@ -151,7 +155,7 @@
     color: var(--color-gray);
     display: flex;
     
-    @media screen and (min-width: 1200px) and (max-width: 1600px){ 
+    @media screen and (min-width: 1200px) { 
         font-size: 14px;
         line-height: 1.1428;
         justify-content: center;
@@ -169,7 +173,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 768px) and (max-width: 1600px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
@@ -290,9 +294,25 @@
     
 }
 
+
+
 .menu-soc-list{
+    margin-top: 64px;
+    margin-bottom: 48px;
     display: flex;
     gap: 20px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.mob-menu-topa{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 25px;
+}
+
+.menu-soc-list__iteam{
+    position: relative;
 }
 
 .menu-soc-list__iteam:not(:last-child){
@@ -311,16 +331,13 @@
     }
 }
 
-.menu-soc-list{
-    margin-top: 64px;
-    margin-bottom: 48px;
-}
+
 
 .menu-mob-contact__link{
     font-family: var(--just-roboto);
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.2222;
     letter-spacing: 0.02em;
     color:var(--color-light-blue);
 }
