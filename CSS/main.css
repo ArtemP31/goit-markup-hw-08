@@ -144,6 +144,10 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
 }
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .modal {
@@ -181,13 +185,19 @@ body {
 
 .modal-window__titel {
   font-style: normal;
-  font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-nav-link);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .modal-window__titel {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-form__text {
@@ -285,13 +295,19 @@ body {
 .modal-policy__text {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142;
+  font-size: 12px;
+  line-height: 1.1666;
   letter-spacing: 0.03em;
   color: var(--color-gray);
   display: flex;
   align-items: center;
   text-align: center;
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .modal-policy__text {
+    font-size: 14px;
+    line-height: 1.7142;
+  }
 }
 
 .modal-policy__text span {
@@ -303,7 +319,6 @@ body {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  margin-left: 12px;
   margin-right: 8px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -318,17 +333,28 @@ body {
 .modal-policy__deal:hover + .modal-policy__text span {
   border-color: var(--color-light-blue);
 }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .modal-policy__text span {
+    margin-left: 12px;
+  }
+}
 
 .modal-policy__adress {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142;
+  font-size: 12px;
+  line-height: 1.1666;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   margin-left: 5px;
   color: var(--color-light-blue);
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .modal-policy__adress {
+    font-size: 14px;
+    line-height: 1.7142;
+  }
 }
 
 .modal-button {
