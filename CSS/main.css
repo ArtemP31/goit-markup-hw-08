@@ -80,7 +80,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 780px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -133,8 +133,8 @@ body {
 }
 
 .modal {
-  width: 450px;
-  max-height: 609px;
+  width: calc(100% - 15px);
+  max-height: calc(100% - 93px);
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -440,6 +440,14 @@ body {
     margin-left: 93px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu__beg {
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+    margin-left: 81px;
+  }
+}
 
 .menu__link {
   display: block;
@@ -474,6 +482,15 @@ body {
   display: none;
 }
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .menu__adres {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    gap: 50px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu__adres {
     display: flex;
     justify-content: end;
